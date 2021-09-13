@@ -1,2 +1,6 @@
 img
 .DS_Store
+jtagAdapter-cache.lib
+fp-info-cache
+*.kicad_pcb-bak
+*.sch-bak
