@@ -1,0 +1,52 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AM2320
+D Temperature and humidity sendsor, I2C, https://akizukidenshi.com/download/ds/aosong/AM2320.pdf
+$ENDCMP
+#
+$CMP Diode_4array_1SS309
+K Diode, Array
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=3305&prodName=1SS309
+$ENDCMP
+#
+$CMP NJM12888F33
+D http://akizukidenshi.com/catalog/g/gI-10675/
+$ENDCMP
+#
+$CMP NJM2866F33
+D https://akizukidenshi.com/download/ds/njr/NJM2865_NJM2866_J.pdf
+$ENDCMP
+#
+$CMP NJW4183U3
+D http://akizukidenshi.com/catalog/g/gI-13853/
+$ENDCMP
+#
+$CMP PowerRelay_G7EB
+D https://www.fa.omron.co.jp/data_pdf/cat/g7eb_ds_j_1_6.pdf
+$ENDCMP
+#
+$CMP PowerRelay_G7L-X
+D https://www.fa.omron.co.jp/data_pdf/cat/g7l-x_cdpa-017_1_5.pdf
+$ENDCMP
+#
+$CMP SW_Slide_with_cover
+D Switch, single pole double throw
+K switch single-pole double-throw spdt ON-ON
+F ~
+$ENDCMP
+#
+$CMP SiT2001B-MEMS-Clock-Generator
+D https://akizukidenshi.com/catalog/g/gI-11094/
+$ENDCMP
+#
+$CMP SparkFun_ProMicro
+D MCU Module, atmega32u4
+K sparkfun promicro arduino atmega32u4
+F https://github.com/sparkfun/Pro_Micro/raw/master/Documentation/ProMicro16MHzv2.pdf
+$ENDCMP
+#
+$CMP TPS7A16
+F https://www.ti.com/lit/ds/symlink/tps7a16.pdf
+$ENDCMP
+#
+#End Doc Library
