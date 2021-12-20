@@ -1,0 +1,240 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "FT232HL adapter"
+Date "2021-12-15"
+Rev "v2.0.0"
+Comp "@toshi00_p"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 61DEACAB
+P 5100 3300
+F 0 "J1" H 5207 4167 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 5207 4076 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 5250 3300 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5250 3300 50  0001 C CNN
+	1    5100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 61DED123
+P 5100 4500
+F 0 "#PWR047" H 5100 4250 50  0001 C CNN
+F 1 "GND" H 5105 4327 50  0000 C CNN
+F 2 "" H 5100 4500 50  0001 C CNN
+F 3 "" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4200 5100 4350
+Wire Wire Line
+	4800 4200 4800 4350
+Wire Wire Line
+	4800 4350 5100 4350
+Connection ~ 5100 4350
+Wire Wire Line
+	5100 4350 5100 4500
+NoConn ~ 5700 3800
+NoConn ~ 5700 3900
+$Comp
+L Device:R R11
+U 1 1 61DEE608
+P 6250 3300
+F 0 "R11" V 6150 3200 50  0000 C CNN
+F 1 "0R" V 6150 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6180 3300 50  0001 C CNN
+F 3 "~" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 61DEEEA2
+P 6250 3400
+F 0 "R12" V 6350 3300 50  0000 C CNN
+F 1 "0R" V 6350 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6180 3400 50  0001 C CNN
+F 3 "~" H 6250 3400 50  0001 C CNN
+	1    6250 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3400 5850 3400
+Wire Wire Line
+	5700 3300 5850 3300
+Wire Wire Line
+	5700 3200 5850 3200
+Wire Wire Line
+	5850 3200 5850 3300
+Connection ~ 5850 3300
+Wire Wire Line
+	5850 3300 6100 3300
+Wire Wire Line
+	5700 3500 5850 3500
+Wire Wire Line
+	5850 3500 5850 3400
+Connection ~ 5850 3400
+Wire Wire Line
+	5850 3400 5700 3400
+Wire Wire Line
+	6400 3300 6700 3300
+Wire Wire Line
+	6400 3400 6700 3400
+Text HLabel 6700 3300 2    50   Input ~ 0
+USB_D-
+Text HLabel 6700 3400 2    50   Input ~ 0
+USB_D+
+$Comp
+L Device:R R10
+U 1 1 61DF2CD8
+P 6050 3000
+F 0 "R10" V 6150 2900 50  0000 C CNN
+F 1 "5.1k" V 6150 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5980 3000 50  0001 C CNN
+F 3 "~" H 6050 3000 50  0001 C CNN
+	1    6050 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 61DF44EC
+P 6050 2900
+F 0 "R9" V 5950 2800 50  0000 C CNN
+F 1 "5.1k" V 5950 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5980 2900 50  0001 C CNN
+F 3 "~" H 6050 2900 50  0001 C CNN
+	1    6050 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 2900 5700 2900
+Wire Wire Line
+	5700 3000 5900 3000
+$Comp
+L power:GND #PWR048
+U 1 1 61DF52D7
+P 6500 3000
+F 0 "#PWR048" H 6500 2750 50  0001 C CNN
+F 1 "GND" H 6505 2827 50  0000 C CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "" H 6500 3000 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3000 6500 3000
+Wire Wire Line
+	6500 3000 6500 2900
+Wire Wire Line
+	6500 2900 6200 2900
+Connection ~ 6500 3000
+$Comp
+L Device:L_Core_Ferrite L3
+U 1 1 61DF78F4
+P 6750 2550
+F 0 "L3" H 6706 2504 50  0000 R CNN
+F 1 "600R/0.5A" H 6706 2595 50  0000 R CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6750 2550 50  0001 C CNN
+F 3 "~" H 6750 2550 50  0001 C CNN
+	1    6750 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2700 6750 2700
+$Comp
+L Device:C C17
+U 1 1 61DFB5EF
+P 6750 2850
+F 0 "C17" H 6865 2896 50  0000 L CNN
+F 1 "0.01μF" H 6865 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6788 2700 50  0001 C CNN
+F 3 "~" H 6750 2850 50  0001 C CNN
+	1    6750 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 2700
+$Comp
+L power:GND #PWR050
+U 1 1 61DFC0BE
+P 6750 3000
+F 0 "#PWR050" H 6750 2750 50  0001 C CNN
+F 1 "GND" H 6755 2827 50  0000 C CNN
+F 2 "" H 6750 3000 50  0001 C CNN
+F 3 "" H 6750 3000 50  0001 C CNN
+	1    6750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR049
+U 1 1 61DFCA0F
+P 6750 2300
+F 0 "#PWR049" H 6750 2150 50  0001 C CNN
+F 1 "+5V" H 6765 2473 50  0000 C CNN
+F 2 "" H 6750 2300 50  0001 C CNN
+F 3 "" H 6750 2300 50  0001 C CNN
+	1    6750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2400 6750 2300
+Text Label 5900 2700 0    50   ~ 0
+VBUS
+$Comp
+L Power_Protection:PRTR5V0U2X D2
+U 1 1 61DFE06A
+P 2500 3450
+F 0 "D2" H 2850 3750 50  0000 L CNN
+F 1 "PRTR5V0U2X" H 2850 3650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 2560 3450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 2560 3450 50  0001 C CNN
+	1    2500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2950 2500 2650
+Text Label 2500 2650 3    50   ~ 0
+VBUS
+Text Label 5900 3300 0    50   ~ 0
+D-
+Text Label 5900 3400 0    50   ~ 0
+D+
+Wire Wire Line
+	2000 3450 1800 3450
+Text Label 1800 3450 0    50   ~ 0
+D+
+Wire Wire Line
+	3000 3450 3250 3450
+Text Label 3250 3450 2    50   ~ 0
+D-
+$Comp
+L power:GND #PWR046
+U 1 1 61E02674
+P 2500 4150
+F 0 "#PWR046" H 2500 3900 50  0001 C CNN
+F 1 "GND" H 2505 3977 50  0000 C CNN
+F 2 "" H 2500 4150 50  0001 C CNN
+F 3 "" H 2500 4150 50  0001 C CNN
+	1    2500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3950 2500 4150
+Wire Notes Line
+	1600 2550 1600 4500
+Wire Notes Line
+	1600 4500 3500 4500
+Wire Notes Line
+	3500 4500 3500 2550
+Wire Notes Line
+	3500 2550 1600 2550
+$EndSCHEMATC

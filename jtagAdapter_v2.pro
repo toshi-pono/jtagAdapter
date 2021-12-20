@@ -1,4 +1,4 @@
-update=2021 August 30, Monday 21:24:09
+update=2021 December 19, Sunday 12:49:45
 version=1
 last_client=kicad
 [general]
@@ -20,7 +20,7 @@ SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
-LabSize=20
+LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
@@ -41,6 +41,7 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.4
 TrackWidth3=0.5
+TrackWidth4=0.7
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
